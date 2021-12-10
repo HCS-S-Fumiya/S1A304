@@ -1,10 +1,45 @@
 @charset "UTF-8";
+
 * {
-    /* ここにGoogle Fontsのfont-family */
+    font-family: 'M PLUS 1', sans-serif;
 }
+
 p.gothic {
     font-family: YuGothic, "ヒラギノ角ゴ ProN W3", メイリオ, sans-serif;
 }
+
 p.mincho {
     font-family: YuMincho, "ヒラギノ明朝 ProN", HGS明朝E, serif;
+}
+
+.fontSize {
+    font-size: 16px;
+}
+
+.px {
+    font-size: 20px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
 }
