@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 div.solid, div.dotted, div.dashed, div.double {
   display: inline-block;
   background-color: #eee;
@@ -8,27 +9,39 @@ div.solid, div.dotted, div.dashed, div.double {
   border-width: 6px;
   border-color: #f00;
 }
+
 /*ここから */
-div.solid {}
+div.solid {
+  border-style: solid;
+}
 
-div.dotted {}
+div.dotted {
+  border-style: dotted;
+}
 
-div.dashed {}
+div.dashed {
+  border-style: dashed;
+}
 
-div.double {}
+div.double {
+  border-style: double;
+}
+
 /*ここまで */
 p {
   text-align: center;
   margin: 40px 0;
 }
+
 .first p {
   box-sizing: border-box;
   width: 160px;
   padding: 6px;
   /*ここから */
-
+  border: 4px solid #000;
   /*ここまで */
 }
+
 .second p {
   width: 220px;
   padding: 6px;
@@ -36,15 +49,28 @@ p {
   margin: 40px 10px;
   box-sizing: border-box;
 }
+
 /*ここから */
 /* 左辺・下辺のみ */
-p.leftBottom {}
+p.leftBottom {
+  border-left: 10px solid #f00;
+  border-bottom: 2px solid #f00;
+}
 
 /* 上下に二重線 */
-p.TopBottom {}
+p.TopBottom {
+  border-top: 3px double #000;
+  border-bottom: 3px double #000;
+}
 
 /* 1辺ずつ色を変える */
-p.fourColors {}
+p.fourColors {
+  border-top: 10px solid #99f;
+  border-bottom: 10px solid #00a;
+  border-left: 10px solid #ccf;
+  border-right: 10px solid #55f;
+}
+
 /*ここまで */
 .third p {
   box-sizing: border-box;
@@ -54,8 +80,15 @@ p.fourColors {}
   height: 60px;
   padding: 10px;
 }
-/*ここから */
-p.kadomaru1 {}
 
-p.kadomaru2 {}
+/*ここから */
+p.kadomaru1 {
+  border: 2px solid #00f;
+  border-radius: 10px;
+}
+
+p.kadomaru2 {
+  border-radius: 30px;
+}
+
 /*ここまで */
