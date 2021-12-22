@@ -41,14 +41,33 @@ main {
   color: #504643;
   margin-bottom: 40px;
 }
-h2 { margin-bottom: 20px; }
-p { margin-bottom: 1em; }
-em {
-  font-size: 1.2em;
-  font-weight: bold;
+h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+p {
+  margin-bottom: 1em;
+  line-height: 2;
+}
+h1 {
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
   color: #196f6a;
 }
 
 /*----------------------------
 この下に、CSSの指定を記述していきましょう。
 ----------------------------*/
+body{
+  background: url(wood.jpg) #504643 left top repeat;
+  text-align: center;
+}
+ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+li{
+  flex: 1 1 20%;
+}

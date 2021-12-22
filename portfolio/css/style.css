@@ -132,7 +132,10 @@ li {
   transform: translateX(-50%);
   background-color: #333;
 }
+.header-nav-item a:hover{
+  border-bottom: #000;
 
+}
 .header-nav-item a:hover:after {
   width: 100%;
 }
