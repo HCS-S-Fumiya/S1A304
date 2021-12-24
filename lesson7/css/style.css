@@ -215,31 +215,32 @@ address {
 /* 入場料（テーブル） */
 /* テーブル全体への指定 */
 .price-table {
-  
-  
+  width: 100%;
+  border-collapse: collapse;
   /* テーブルの境界線が重ねて表示する */
-  
+  font-size: 12px;
 }
 /* <thead>に対する指定 */
-
-  
-  
+.price-table thead{
+  color: #fff;
+  background-color: #4184e2;
+}
 
 /* <th>と<td>に対する指定 */
-
-  
-  
-  
-
+.price-table th, .price-table td{
+  padding: 20px 15px;
+  font-weight: 500;
+  border: 1px solid #707070;
+}
 /* <tbody>内の<th>に対する指定 */
-
-  
-  
-
+.price-table tbody th{
+  text-align: left;
+  background-color: #fff;
+}
 /* <tbody>内の<td>に対する指定 */
-
-  
-
+.price-table tbody td{
+  background-color: #fff;
+}
 
 /* --------------------------------------------------
   お問い合わせフォーム

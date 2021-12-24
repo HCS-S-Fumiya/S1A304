@@ -52,33 +52,33 @@
         <img src="img/ttl_contact.svg" alt="お問い合わせフォーム">
       </h2>
       <!-- フォーム -->
-
+  <form action="">
       <!-- お名前 -->
-      <div>
+      <div class="form-group">
         <!-- 項目名 -->
-        <label>お名前</label>
+        <label for="yourName" class="form-label">お名前</label>
         <!-- 入力欄：テキスト -->
-
+        <input type="text" name="お名前" id="yourName">
       </div>
       <!-- E-Mail -->
-      <div>
+      <div class="form-group">
         <!-- 項目名 -->
-        <label>E-Mail</label>
+        <label for="yourEmail" class="form-label">E-Mail</label>
         <!-- 入力欄：email -->
-
+        <input type="email" name="E-Mail" id="yourEmail">
       </div>
       <!-- お問い合わせ内容 -->
-      <div>
+      <div class="form-group">
         <!-- 項目名 -->
-        <label>お問い合わせ内容</label>
+        <label for="yourInquiry" class="form-label">お問い合わせ内容</label>
         <!-- 入力欄：テキストエリア -->
-
+        <textarea name="お問い合わせ内容" id="yourInquiry" cols="30" rows="10"></textarea>
       </div>
       <!-- 送信ボタン -->
-      <div>
-
+      <div class="form-btn">
+        <button type="submit"><img src="../img/btn_send.svg" alt="送信する"></button>
       </div>
-
+    </form>
       <!-- フォームここまで -->
     </section>
     <!-- セクションここまで -->
