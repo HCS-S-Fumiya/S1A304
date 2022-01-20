@@ -34,7 +34,7 @@ section.second {
 /*ここから*/
 /* positionを使った指定 */
 .second img {
-  position: absolute;
+	position: absolute;
   top: 40px;
   left: 100px;
 }
