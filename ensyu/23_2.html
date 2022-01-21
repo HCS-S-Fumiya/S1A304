@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームデザイン2</title>
+    <link rel="stylesheet" href="23_2.css">
+</head>
+
+<body>
+    <form action="program.php" method="post">
+        <dl>
+            <div class="formItem">
+                <dt>お名前</dt>
+                <dd><input type="text" name="username"></dd>
+            </div>
+            <div class="formItem">
+                <dt>職業</dt>
+                <dd>
+                    <label><input type="radio" name="job" value="学生">学生</label>
+                    <label><input type="radio" name="job" value="会社員">会社員</label>
+                    <label><input type="radio" name="job" value="その他">その他</label>
+                </dd>
+            </div>
+            <div class="formItem">
+                <dt>お問い合わせ種別</dt>
+                <dd>
+                    <select name="massagetype">
+                        <option value="選択してください">選択してください</option>
+                        <option value="商品について">商品について</option>
+                        <option value="採用について">採用について</option>
+                        <option value="その他お問い合わせ">その他お問い合わせ</option>
+                    </select>
+                </dd>
+            </div>
+            <div class="formItem">
+                <dt>お問い合わせ内容</dt>
+                <dd><textarea name="massage"></textarea></dd>
+            </div>
+        </dl>
+        <div class="btn"><input type="submit" value="送信する"></div>
+    </form>
+</body>
+
+</html>
