@@ -247,40 +247,40 @@ address {
 -------------------------------------------------- */
 /* フォームの3つのブロックに対する指定 */
 .form-group {
-  
+  margin-bottom: 20px;
 }
 /* 項目名に対する指定 */
 .form-label {
-  
-  
-  
+  display: block;
+  margin-bottom: 10px;
+  color: #032559;
 }
 /* 送信ボタンを囲む<div>に対する指定 */
 .form-btn {
-  
-  
+  margin: 30px 0;
+  text-align: center;
 }
 /* 入力欄に対する指定 */
-
-  
-  
-  
-
+input[type="text"], input[type="email"], textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+}
 /* 入力欄が:focus（入力状態）のとき */
-
-  
-  
-
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  border-color: #032559;
+  outline: none;
+}
 /* 送信ボタン */
-
-  
-  
-  
-
+button[type="submit"]{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 /* 送信ボタンが:hoverのとき */
-
-  
-
+button[type="submit"]:hover{
+  opacity: 0.65;
+}
 /* --------------------------------------------------
   幅768px未満のスタイル指定 ここまで
 -------------------------------------------------- */
@@ -291,18 +291,18 @@ address {
 @media screen and (min-width: 768px) {
   /* ヘッダー */
   .header {
-    
+    padding: 40px 0 0;
   }
   /* ロゴ */
   .logo {
-    
-    
-    
-    
+    width: auto;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
   }
   /* ハンバーガーボタン */
   .btn-burger {
-    
+    display: none;
     /* 768px以上では使用しない */
   }
   /* ナビゲーション */
@@ -311,16 +311,16 @@ address {
   }
   .nav-list {
     /* flexbox（横並びにする要素の親に指定） */
-    
+    display: flex;
     /* フレックスアイテムを主軸方向（横方向）中央揃えで配置 */
-    
+    justify-content: center;
     /* フレックスアイテムを交差軸方向（縦方向）中央揃えで配置 */
-    
+    align-items: center;
     padding: 0;
   }
   .nav-list li {
     /* フレックスアイテムに対する指定 */
-    
+    flex: 0 1 auto;
     padding: 0 20px;
     line-height: 1;
     border-right: 1px solid #fff;
@@ -332,7 +332,7 @@ address {
   }
   /* 幅768px未満でメニューを開いた状態から、ウィンドウ幅を768px以上に広げたとき、メニューにflexboxを適用して<li>を横並び表示に切り替える */
   .nav-toggle:checked~.nav .nav-list {
-    
+    display: flex;
   }
   /* セクション */
   .section {
@@ -360,13 +360,13 @@ address {
   /* 横並び */
   .row {
     /* flexbox（横並びにする要素の親に指定） */
-      
-    
+    display: flex;
+    justify-content: space-between;
   }
   /* 横並び要素 */
   .col {
     /* フレックスアイテムに対する指定 */
-    
+    flex: 0 1 32%;
     margin: 0;
   }
   /* --------------------------------------------------
@@ -374,11 +374,11 @@ address {
   -------------------------------------------------- */
   /* 入場料（テーブル） */
   .price-table {
-    
+    font-size: 16px;
   }
   /* <th>と<td>に対する指定 */
   .price-table th, .price-table td {
-    
+    padding: 20px;
   }
   /* --------------------------------------------------
   お問い合わせフォーム
@@ -386,23 +386,23 @@ address {
   /* フォームの3つのブロックに対する指定 */
   .form-group {
     /* flexbox（横並びにする要素の親に指定） */
-    
-    
+    display: flex;
+    max-width: 800px;
     /* 横幅の最大値 */
     margin-bottom: 10px;
   }
   /* 項目名に対する指定 */
   .form-label {
     /* フレックスアイテムに対する指定 */
-    
-    
+    flex: 0 0 12em;
+    max-width: 12em;
     margin: 0;
     padding-top: 5px;
   }
   /* 入力欄を囲む<div>に対する指定 */
   .form-col {
     /* フレックスアイテムに対する指定 */
-    
+    flex: 0 1 100%;
   }
 }
 /* --------------------------------------------------
