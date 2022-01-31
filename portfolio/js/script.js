@@ -17,4 +17,9 @@ $(function () {
     return false;
   });
 
+  $("#js-page-top2").on("click", function () {
+    $("body,html").animate({ scrollTop: 0, }, 300);
+    return false;
+  });
+
 });
